@@ -18,7 +18,7 @@ public class ShiftService
 
         return true;
     }
-
+    
     public async Task<bool> WorkerExists(int workerId)
     {
         bool exists = await _context.Workers.AnyAsync(w => w.Id == workerId);
